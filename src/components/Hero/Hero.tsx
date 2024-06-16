@@ -1,8 +1,4 @@
 
-import AnalyticsIcon from "../../../public/assets/Icons/analytics";
-import ScrollingLogos from "../HorizontalScroll/HorizontalAnimation";
-import LanguagesList from "../LanguagesList/LanguagesList";
-import Services from "../Services/Services";
 export const Hero = () => {
   return (
     <>
@@ -34,10 +30,6 @@ export const Hero = () => {
           className="w-full max-w-md"
         />
       </section>
-      <AnalyticsIcon/>
-      <LanguagesList/>
-      <Services/>
-      <ScrollingLogos/>
     </>
   );
 };
