@@ -4,6 +4,8 @@ import { Footer } from './components/Footer';
 import { Home } from './modules/Home';
 import './App.css';
 import Pricing from './components/Pricing/Pricing';
+import Accordion from './components/Accordion/Accordion';
+import { FAQS } from './constants/FaqData.constant';
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
           </Route>
         </Routes>
       </main>
+      <Accordion faqs={FAQS}/>
       <Footer />
     </>
   );
