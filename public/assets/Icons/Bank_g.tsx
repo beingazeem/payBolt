@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { IconProps } from '../../../interface/IconProps';
-
+import { IconProps } from '../../../src/interface/IconProps';
 export const BankG_Icon = React.forwardRef<SVGSVGElement, IconProps>(
   ({ color = 'currentColor', ...props }, forwardedRef) => {
     return (

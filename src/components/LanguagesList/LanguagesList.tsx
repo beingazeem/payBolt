@@ -46,11 +46,11 @@ const LanguagesList = () => {
     return selectedLanguage;
   }
   return (
-    <div className="mx-2 my-2 px-2 py-2 font-bold flex items-center justify-center gap-x-2">
+    <div className="mx-2 my-2 px-2 py-2 font-bold flex items-center justify-center gap-x-2 border rounded-md ">
       <span className="text-5xl font-bold">Built for {" "}
       <ReactTyped 
         strings={[applyColorCoding(languageChangeHandler())]}
-        typeSpeed={100}
+        typeSpeed={50}
         loop      
       />
       </span>
