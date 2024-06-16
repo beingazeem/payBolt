@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import React from 'react';
 
 const list = [
   '/assets/images/YesBank.png',
@@ -72,7 +71,7 @@ const ScrollingLogos = () => {
   }, []);
 
   return (
-    <div className=' container'>
+    <div className='container'>
       <div className="grid gap-x-10 grid-flow-col  overflow-hidden sm:py-20 ">
         <div ref={scrollTextRef1} className="scroll-text grid gap-x-10 grid-flow-col items-center justify-between">
           {list.map((el, idx) => (

@@ -15,7 +15,7 @@ export const Header = () => {
             <h1 className="text-3xl font-bold h-full">LOGO</h1>
           </Link>
           <ul className="flex items-center gap-5 h-full">
-            <NavLink
+            {/* <NavLink
               to="/about"
               className={({ isActive }) =>
                 isActive
@@ -24,14 +24,14 @@ export const Header = () => {
               }
             >
               About
-            </NavLink>
+            </NavLink> */}
             <div
               className="relative h-[70%] flex items-center"
               onMouseEnter={() => setIsSubProductVisible(true)}
               onMouseLeave={() => setIsSubProductVisible(false)}
             >
               <NavLink
-                to={RoutePath.PRODUCTS}
+                to={RoutePath.SUB_PRODUCTS[0].path}
                 className={({ isActive }) =>
                   `flex items-center gap-1 ${
                     isActive
