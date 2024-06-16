@@ -31,9 +31,9 @@ export const QrCollections = () => {
               <p className="text-background/60">{feature.desc}</p>
               <Link
                 to={feature.href}
-                className="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl"
+                className="flex justify-center items-center bg-primary rounded-xl py-5 px-4 text-center text-white text-xl"
               >
-                Get Started
+                <span>Get Started</span>
                 <img
                   src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
                   className="ml-2"
@@ -63,9 +63,9 @@ export const QrCollections = () => {
               <p className="text-foreground text-xl">{benefit.desc}</p>
               <Link
                 to={benefit.href}
-                className="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl"
+                className="flex justify-center items-center bg-primary rounded-xl py-5 px-4 text-center text-white text-xl"
               >
-                Know More
+                <span>Know More</span>
                 <img
                   src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
                   className="ml-2"
