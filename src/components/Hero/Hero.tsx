@@ -6,7 +6,8 @@ export const Hero = () => {
     <>
       <section
         id="hero"
-        className="w-11/12 md:w-[65%] mx-auto flex justify-between items-center flex-col lg:flex-row gap-20 min-h-[calc(100dvh-8rem)]">
+        className="w-11/12 md:w-[65%] mx-auto flex justify-between items-center flex-col lg:flex-row gap-20 min-h-[calc(100dvh-8rem)]"
+      >
         <div className="flex flex-col justify-center items-start gap-5">
           <h3 className="text-5xl font-bold">
             <span className="block">Simplifying Payments.</span>{' '}

@@ -19,13 +19,15 @@ export const Header = () => {
                 isActive
                   ? 'text-foreground'
                   : 'text-foreground/70 hover:text-foreground'
-              }>
+              }
+            >
               About
             </NavLink>
             <div
               className="relative h-[70%] flex items-center"
               onMouseEnter={() => setIsSubProductVisible(true)}
-              onMouseLeave={() => setIsSubProductVisible(false)}>
+              onMouseLeave={() => setIsSubProductVisible(false)}
+            >
               <NavLink
                 to={RoutePath.PRODUCTS}
                 className={({ isActive }) =>
@@ -34,7 +36,8 @@ export const Header = () => {
                       ? 'text-foreground'
                       : 'text-foreground/70 hover:text-foreground'
                   }`
-                }>
+                }
+              >
                 <span>Products</span>
                 <FaAngleDown
                   className={`relative top-0.5 transition-all ${
@@ -49,7 +52,8 @@ export const Header = () => {
                       key={path}
                       to={path}
                       className="hover:text-foreground text-foreground/70"
-                      onClick={() => setIsSubProductVisible(false)}>
+                      onClick={() => setIsSubProductVisible(false)}
+                    >
                       {name}
                     </NavLink>
                   ))}
@@ -62,7 +66,8 @@ export const Header = () => {
                 isActive
                   ? 'text-foreground'
                   : 'text-foreground/70 hover:text-foreground'
-              }>
+              }
+            >
               Pricing
             </NavLink>
           </ul>
@@ -70,7 +75,8 @@ export const Header = () => {
         <ul className="flex items-center gap-5">
           <NavLink
             to={RoutePath.LOGIN}
-            className={'py-1 px-5  transition-colors  font-bold '}>
+            className={'py-1 px-5  transition-colors  font-bold '}
+          >
             Login
           </NavLink>
           <NavLink
@@ -79,7 +85,8 @@ export const Header = () => {
               return `py-1 px-5 rounded-full border-foreground/30 transition-colors border font-bold hover:bg-foreground hover:text-background ${
                 isActive ? 'bg-foreground text-background' : ''
               }`;
-            }}>
+            }}
+          >
             Sign up
           </NavLink>
         </ul>
