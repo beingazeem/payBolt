@@ -26,7 +26,7 @@ export const Header = () => {
               onMouseEnter={() => setIsSubProductVisible(true)}
               onMouseLeave={() => setIsSubProductVisible(false)}>
               <NavLink
-                to="/products"
+                to="/products/1"
                 className={({ isActive }) =>
                   `flex items-center gap-1 ${
                     isActive
@@ -78,11 +78,7 @@ export const Header = () => {
         <ul className="flex items-center gap-5">
           <NavLink
             to="/login"
-            className={({ isActive }) => {
-              return `py-1 px-5 rounded-full border-foreground/30 transition-colors border font-bold hover:bg-foreground hover:text-background ${
-                isActive ? 'bg-foreground text-background' : ''
-              }`;
-            }}>
+            className={"py-1 px-5  transition-colors  font-bold "}>
             Login
           </NavLink>
           <NavLink
