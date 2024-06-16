@@ -1,6 +1,4 @@
-
-
-export interface LangauageProps{
+export interface LangauageProps {
   label: string;
   value: string;
-};
+}

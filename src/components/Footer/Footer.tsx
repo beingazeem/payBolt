@@ -1,5 +1,5 @@
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaSquareXTwitter } from 'react-icons/fa6';
 
 export const Footer = () => {
   return (
@@ -86,9 +86,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center mt-6">
-        Copyright 2024 Company Name
-      </div>
+      <div className="text-center mt-6">Copyright 2024 Company Name</div>
     </footer>
   );
 };
