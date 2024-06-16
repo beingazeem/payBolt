@@ -26,7 +26,7 @@ export const Header = () => {
               onMouseEnter={() => setIsSubProductVisible(true)}
               onMouseLeave={() => setIsSubProductVisible(false)}>
               <NavLink
-                to="/products/1"
+                to="/products"
                 className={({ isActive }) =>
                   `flex items-center gap-1 ${
                     isActive
