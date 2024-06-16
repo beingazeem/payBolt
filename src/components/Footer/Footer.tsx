@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaSquareXTwitter } from 'react-icons/fa6';
 
@@ -5,13 +6,15 @@ export const Footer = () => {
   return (
     <footer>
       <div className="container mx-auto flex flex-col md:flex-row justify-around items-center space-y-6 md:space-y-0">
-        <div className="flex flex-col items-center">
-          <div className="flex items-center mb-4">
+        <div className="flex flex-col">
+          <div className="flex mb-4 gap-x-4">
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-2">
-              <img src="" alt="Bulkpe" className="w-6 h-6" />
+              <img src="/assets/images/CompanyLogo.png" alt="Bulkpe" className="w-6 h-6" />
             </div>
-            <span className="text-2xl font-semibold">Bulkpe</span>
+            
+            <div className="text-2xl font-semibold flex items-end">PayBolt</div>
           </div>
+          <div className="flex flex-col items-center">
           <address className="text-center not-italic mb-4">
             PayBolt Technologies Private Limited
             <br />
@@ -26,7 +29,7 @@ export const Footer = () => {
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black hover:text-gray-700"
+              className="text-white hover:text-gray-700"
             >
               <FaFacebook className="w-6 h-6" />
             </a>
@@ -34,7 +37,7 @@ export const Footer = () => {
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black hover:text-gray-700"
+              className="text-white hover:text-gray-700"
             >
               <FaInstagram className="w-6 h-6" />
             </a>
@@ -42,7 +45,7 @@ export const Footer = () => {
               href="https://www.twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black hover:text-gray-700"
+              className="text-white hover:text-gray-700"
             >
               <FaSquareXTwitter className="w-6 h-6" />
             </a>
@@ -50,10 +53,11 @@ export const Footer = () => {
               href="https://www.linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black hover:text-gray-700"
+              className="text-white hover:text-gray-700"
             >
               <FaLinkedin className="w-6 h-6" />
             </a>
+          </div>
           </div>
         </div>
 

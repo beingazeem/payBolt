@@ -2,16 +2,10 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
 const list = [
-  '/assets/images/Bank.png',
-  '/assets/images/Banking.png',
-  '/assets/images/Finance.png',
-  '/assets/images/CircleChart.png',
-  '/assets/images/ColoredChart.png',
-  '/assets/images/Financial-Analysis.png',
-  '/assets/images/GraphChart.png',
-  '/assets/images/Growth-Report.png',
-  '/assets/images/MobileBanking.png',
-  '/assets/images/NormalChart.png',
+  '/assets/images/YesBank.png',
+  '/assets/images/Fino_Bank.png',
+  '/assets/images/Axis_Bank.png',
+  '/assets/images/Rbl_Bank.png',
 ];
 
 const ScrollingLogos = () => {
@@ -77,26 +71,22 @@ const ScrollingLogos = () => {
   }, []);
 
   return (
-    <div className="grid gap-x-10 grid-flow-col py-10 overflow-hidden sm:py-20">
-      <div
-        ref={scrollTextRef1}
-        className="scroll-text grid gap-x-10 grid-flow-col items-center justify-between"
-      >
-        {list.map((el, idx) => (
-          <div key={idx} className="min-h-15 min-w-56 mr-18">
-            <img alt={`Logo ${idx}`} src={el} width="220" height="60" />
-          </div>
-        ))}
-      </div>
-      <div
-        ref={scrollTextRef2}
-        className="scroll-text grid gap-x-10 grid-flow-col items-center justify-between"
-      >
-        {list.map((el, idx) => (
-          <div key={idx} className="min-h-15 min-w-56 mr-18">
-            <img alt={`Logo ${idx}`} src={el} width="220" height="60" />
-          </div>
-        ))}
+    <div className='container'>
+      <div className="grid gap-x-10 grid-flow-col  overflow-hidden sm:py-20 ">
+        <div ref={scrollTextRef1} className="scroll-text grid gap-x-10 grid-flow-col items-center justify-between">
+          {list.map((el, idx) => (
+            <div key={idx} className="min-h-15 min-w-56 mr-18">
+              <img alt={`Logo ${idx}`} src={el} className='w-[200px] h-[200px]'  />
+            </div>
+          ))}
+        </div>
+        <div ref={scrollTextRef2} className="scroll-text grid gap-x-10 grid-flow-col items-center justify-between">
+          {list.map((el, idx) => (
+            <div key={idx} className="min-h-15 min-w-56 mr-18">
+              <img alt={`Logo ${idx}`} src={el} className='w-[200px] h-[200px]' />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

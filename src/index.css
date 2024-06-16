@@ -37,7 +37,7 @@
 }
 
 .tricolor {
-  background: linear-gradient(to bottom, #ff671f, #fff, #046a38);
+  background: linear-gradient(to bottom, #ff671f, #fff, #046838);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
