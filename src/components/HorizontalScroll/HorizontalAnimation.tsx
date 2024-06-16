@@ -2,17 +2,10 @@ import  { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
 const list = [
-  '/assets/images/Bank.png',
-  '/assets/images/Banking.png',
-  '/assets/images/Finance.png',
-  '/assets/images/CircleChart.png',
-  '/assets/images/ColoredChart.png',
-  '/assets/images/Financial-Analysis.png',
-  '/assets/images/GraphChart.png',
-  '/assets/images/Growth-Report.png',
-  '/assets/images/MobileBanking.png',
-  '/assets/images/NormalChart.png',
-
+  '/assets/images/YesBank.png',
+  '/assets/images/Fino_Bank.png',
+  '/assets/images/Axis_Bank.png',
+  '/assets/images/Rbl_Bank.png',
 ];
 
 const ScrollingLogos = () => {

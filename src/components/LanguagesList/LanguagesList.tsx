@@ -1,7 +1,6 @@
 
 import { TranslationsLang } from "../../constants/language.constants";
 import {ReactTyped} from "react-typed";
-
 const LanguagesList = () => {
 
 

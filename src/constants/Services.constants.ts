@@ -4,7 +4,7 @@ export const ServicesConstants = [
   {
     heading:'UPI QR Collections',
     desc:'Enable quick and easy payments with our UPI QR ',
-    img:'https://bulkpe.s3.ap-south-1.amazonaws.com/website/home.svg',
+    img:'/assets/images/QrCollections.jpg',
     isImageLeft:true,
   },
   {

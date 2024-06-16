@@ -4,6 +4,7 @@ import { Footer } from './components/Footer';
 import { Home } from './modules/Home';
 
 import './App.css';
+import Products from './components/Products/Products';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Routes>
           <Route>
             <Route index path="/" element={<Home />} />
-            <Route index path="/products" element={<div>Products</div>} />
+            <Route index path="/products" element={<Products/>} />
             <Route index path="/about" element={<div>About</div>} />
             <Route index path="/pricing" element={<div>Pricing</div>} />
             <Route index path="/login" element={<div>Login</div>} />
