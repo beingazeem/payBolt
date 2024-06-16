@@ -4,7 +4,7 @@ export const QrCollectionsConstant = {
   },
   desc: 'Enable quick and easy payments with our UPI QR solutions, designed to speed up transactions and improve customer experience.',
   imgSrc:
-    'https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/qr-code-payment.jpg',
+    'https://utimaco.com/sites/default/files/styles/ut_stage_l_jpeg/public/2022-04/qr_codes_payments.jpg.webp',
   buttons: {
     first: 'Sign Up',
     second: 'Contact Sales',

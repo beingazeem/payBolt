@@ -15,7 +15,7 @@ export const Hero = ({ buttons, desc, imgSrc, title }: Props) => {
   return (
     <section
       id="hero"
-      className="w-11/12 md:w-[65%] mx-auto flex justify-between items-center flex-col lg:flex-row gap-20 min-h-[calc(100dvh-8rem)] mb-10"
+      className="w-11/12 md:w-[65%] mx-auto flex justify-between items-center flex-col lg:flex-row lg:justify-between gap-20 min-h-[calc(100dvh-8rem)] mb-10"
     >
       <div className="flex flex-col justify-center items-start gap-5">
         <h3 className="text-5xl font-bold">
