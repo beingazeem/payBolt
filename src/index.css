@@ -35,3 +35,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+.tricolor {
+  background: linear-gradient(to bottom, #ff671f, #fff, #046a38);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}

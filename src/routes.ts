@@ -4,8 +4,8 @@ export const RoutePath = {
   PRODUCTS: '/products',
   SUB_PRODUCTS: [
     {
-      path: '/products/1',
-      name: 'Product 1',
+      path: '/products/qr-collections',
+      name: 'QR Collections',
     },
     {
       path: '/products/2',
