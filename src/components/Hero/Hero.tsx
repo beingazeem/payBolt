@@ -1,8 +1,6 @@
-
-import AnalyticsIcon from "../../../public/assets/Icons/analytics";
-import ScrollingLogos from "../HorizontalScroll/HorizontalAnimation";
-import LanguagesList from "../LanguagesList/LanguagesList";
-import Services from "../Services/Services";
+import ScrollingLogos from '../HorizontalScroll/HorizontalAnimation';
+import LanguagesList from '../LanguagesList/LanguagesList';
+import Services from '../Services/Services';
 export const Hero = () => {
   return (
     <>
@@ -16,8 +14,8 @@ export const Hero = () => {
           </h3>
           <p className="text-foreground/70 max-w-xl">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex numquam
-            tenetur non asperiores magni quam harum reiciendis repudiandae, minus
-            in explicabo. Dolorem recusandae possimus non!
+            tenetur non asperiores magni quam harum reiciendis repudiandae,
+            minus in explicabo. Dolorem recusandae possimus non!
           </p>
           <div className="flex gap-x-5 items-center flex-wrap">
             <button className="py-2 px-8 mt-5 rounded-full border-foreground/30 transition-colors border font-bold hover:bg-foreground hover:text-background">
@@ -34,10 +32,9 @@ export const Hero = () => {
           className="w-full max-w-md"
         />
       </section>
-      <AnalyticsIcon/>
-      <LanguagesList/>
-      <Services/>
-      <ScrollingLogos/>
+      <LanguagesList />
+      <Services />
+      <ScrollingLogos />
     </>
   );
 };

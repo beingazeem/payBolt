@@ -3,8 +3,6 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './modules/Home';
 
-import './App.css';
-
 function App() {
   return (
     <>
