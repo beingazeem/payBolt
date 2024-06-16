@@ -3,7 +3,8 @@ import { useState, useRef, useEffect } from "react";
 
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
-import { FAQ } from "../../constants/FaqData.constant";
+import {FAQ} from "../../constants/FaqData.constant";
+import React from "react";
 interface AccordionProps {
   faqs: FAQ[];
 }
