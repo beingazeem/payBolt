@@ -30,11 +30,11 @@ const Accordion: React.FC<AccordionProps> = ({faqs:faqs}) => {
   }, [openIndex]);
 
   return (
-    <div className="flex justify-between">
-      <h1 className="font-bold text-4xl items-center p-5">
+    <div className="flex flex-col items-center justify-center mx-4 mb-4 ">
+      <div className="font-bold text-4xl">
         Frequently Asked Questions
         <span className=" font-normal"> (FAQ)</span>
-      </h1>
+      </div>
       <div className="w-full max-w-2xl mx-auto p-4">
         {faqs.map((faq, index) => (
           <div key={index} className="mb-4">

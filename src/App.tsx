@@ -6,7 +6,7 @@ import './App.css';
 import Pricing from './components/Pricing/Pricing';
 import Accordion from './components/Accordion/Accordion';
 import { FAQS } from './constants/FaqData.constant';
-
+import Products from './components/Products/products';
 function App() {
   return (
     <>
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route>
             <Route index path="/" element={<Home />} />
-            <Route index path="/products" element={<div>Products</div>} />
+            <Route index path="/products" element={<Products/>} />
             <Route index path="/about" element={<div>About</div>} />
             <Route index path="/pricing" element={<Pricing/>} />
             <Route index path="/login" element={<div>Login</div>} />

@@ -21,6 +21,6 @@ export const FAQS: FAQ[] = [
   },
   {
     question: "Where are you located?",
-    answer: "Banglore.",
+    answer: "Bengaluru.",
   },
 ];

@@ -1,7 +1,6 @@
 
 import { TranslationsLang } from "../../constants/language.constants";
 import {ReactTyped} from "react-typed";
-
 const LanguagesList = () => {
 
 
@@ -46,7 +45,7 @@ const LanguagesList = () => {
     return selectedLanguage;
   }
   return (
-    <div className="mx-2 my-2 px-2 py-2 font-bold flex items-center justify-center gap-x-2 border rounded-md ">
+    <div className="mx-2 my-2 px-2 py-2 font-bold flex items-center justify-center gap-x-2 border-b-2 ">
       <span className="text-5xl font-bold">Built for {" "}
       <ReactTyped 
         strings={[applyColorCoding(languageChangeHandler())]}

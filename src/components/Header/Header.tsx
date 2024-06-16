@@ -4,8 +4,10 @@ import { FaAngleDown } from 'react-icons/fa6';
 
 export const Header = () => {
   const [isSubProductVisible, setIsSubProductVisible] = useState(false);
+
+
   return (
-    <header className="border-b border-b-foreground/10 fixed top-0 w-full z-header bg-background">
+    <header className="border-b border-b-foreground/10 fixed top-0 w-full z-50 bg-background">
       <nav className="w-11/12 md:w-[65%] mx-auto flex justify-between items-center">
         <div className="flex items-center gap-10 h-20">
           <Link to="/">
