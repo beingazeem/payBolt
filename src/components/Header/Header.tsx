@@ -51,6 +51,16 @@ export const Header = () => {
             </div>
           )}
         </div>
+        {/* <NavLink
+          to={RoutePath.ABOUT}
+          className={({ isActive }) =>
+            isActive
+              ? 'text-foreground'
+              : 'text-foreground/70 hover:text-foreground'
+          }
+        >
+          About
+        </NavLink> */}
         <NavLink
           to={RoutePath.PRICING}
           className={({ isActive }) =>

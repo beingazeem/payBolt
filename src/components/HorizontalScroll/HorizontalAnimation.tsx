@@ -71,7 +71,7 @@ const ScrollingLogos = () => {
   }, []);
 
   return (
-    <div className="cardTheme">
+    <div className="bg-white">
       <div className="grid gap-x-10 grid-flow-col overflow-hidden mb-10 py-10 ">
         <div
           ref={scrollTextRef1}

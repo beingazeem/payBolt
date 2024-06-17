@@ -47,50 +47,28 @@
   @apply bg-gradient-to-b from-background to-[#334d50] text-foreground;
 }
 
-.cardTheme{
-
-}
-
-.theme-custom{
-  
-    /* Name: custom color palette
-       Author: Ilias Ism
-       URL: https://gradient.page */
-
-    /* CSS: .bg-gradient { background: var(--gradient) } */
-    --gradient: #334d50;
-
-    --background: 198 14.3% 2.08%;
-    --foreground: 198 2.2% 96.3%;
-
-    --muted: 198 11% 7.800000000000001%;
-    --muted-foreground: 198 2.2% 52.6%;
-
-    --popover: 198 60.6% 3.38%;
-    --popover-foreground: 198 2.2% 96.3%;
-
-    --card: 198 60.6% 3.38%;
-    --card-foreground: 198 2.2% 96.3%;
-
-    --border: 198 11% 7.800000000000001%;
-    --input: 198 11% 7.800000000000001%;
-
-    --primary: 198 22% 26%;
-    --primary-foreground: 198 2.2% 96.3%;
-
-    --secondary: 198 11% 7.800000000000001%;
-    --secondary-foreground: 198 2.2% 96.3%;
-
-    --accent: 198 11% 7.800000000000001%;
-    --accent-foreground: 198 2.2% 96.3%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 198 2.2% 96.3%;
-
-    --ring: 198 22% 26%;
-}
-
 
 .cardTheme{
   background:linear-gradient(to top left, #292E49 , #0b0b0f);
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background:#ec008c;;
+  transform-origin: 0%;
+  z-index: 9999;
+}
+
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #fff;
+  bottom: 100px;
+  z-index: 9999;
 }
