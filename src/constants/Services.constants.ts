@@ -18,29 +18,28 @@ const ServicesConstants = [
     desc: 'Seamlessly transfer funds with our reliable and fast money transfer services ',
     img: '/assets/images/Money_transfer.png',
     isImageLeft: true,
-    path:'/products/moneyTransfer'
+    path: '/products/moneyTransfer',
   },
   {
     heading: 'Payout Services',
     desc: 'Manage your payouts with ease using our comprehensive payout services ',
     img: '/assets/images/Payout_Collection.png',
     isImageLeft: false,
-    path:'/products/payoutServices'
-
+    path: '/products/payoutServices',
   },
   {
     heading: 'POS Devices',
     desc: 'Equip your business with state-of-the-art POS devices.',
     img: '/assets/images/POS_Devices.png',
     isImageLeft: true,
-    path:'/product/posServices'
+    path: '/product/posServices',
   },
   {
     heading: 'Instant Bank Account Opening',
     desc: 'Open bank accounts instantly and start transacting without any delays.',
     img: '/assets/images/instant-bank.png',
     isImageLeft: false,
-    path:'/product/instantBanking'
+    path: '/product/instantBanking',
   },
 ];
 

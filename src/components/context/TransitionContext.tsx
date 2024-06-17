@@ -6,7 +6,7 @@ const TransitionContext = createContext({ completed: false });
 export const TransitionProvider = ({ children }) => {
   const [completed, setCompleted] = useState(false);
 
-  const toggleCompleted = (value) => {
+  const toggleCompleted = value => {
     setCompleted(value);
   };
 
