@@ -17,7 +17,8 @@ import { DynamicQrCollections } from './modules/DynamicQrCollections';
 import { MoneyTransfer } from './modules/MoneyTransfer';
 import { PosService } from './modules/PosService';
 import TermAndCondition from './modules/TnC/TermAndCondition';
-
+import PrivacyPolicy from './modules/PrivacyAndPolicy/Privacy&Policy';
+import { ContactUs } from './modules/ContactUs';
 function App() {
   const location = useLocation();
   const { scrollYProgress } = useScroll();
@@ -51,6 +52,8 @@ function App() {
           <Route path="/products/money-transfer" element={<MoneyTransfer />} />
           <Route path="/products/pos-services" element={<PosService />} />
           <Route path="/terms-of-service" element={<TermAndCondition />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

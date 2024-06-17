@@ -1,6 +1,6 @@
 const TermAndCondition = () => {
   return (
-    <div className="container mx-auto px-40 py-8">
+    <div className="container mx-auto px-40 py-24">
       <p className="mb-4"></p>
       <h1 className=" text-4xl font-semibold  mb-16 flex justify-center">
         <span className="text-blue-500">T</span>erm &&nbsp;
