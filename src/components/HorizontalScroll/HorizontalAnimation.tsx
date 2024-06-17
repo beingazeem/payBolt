@@ -71,19 +71,33 @@ const ScrollingLogos = () => {
   }, []);
 
   return (
-    <div className='container'>
+    <div className="container">
       <div className="grid gap-x-10 grid-flow-col  overflow-hidden sm:py-20 ">
-        <div ref={scrollTextRef1} className="scroll-text grid gap-x-10 grid-flow-col items-center justify-between">
+        <div
+          ref={scrollTextRef1}
+          className="scroll-text grid gap-x-10 grid-flow-col items-center justify-between"
+        >
           {list.map((el, idx) => (
             <div key={idx} className="min-h-15 min-w-56 mr-18">
-              <img alt={`Logo ${idx}`} src={el} className='w-[200px] h-[200px]'  />
+              <img
+                alt={`Logo ${idx}`}
+                src={el}
+                className="w-[200px] h-[200px]"
+              />
             </div>
           ))}
         </div>
-        <div ref={scrollTextRef2} className="scroll-text grid gap-x-10 grid-flow-col items-center justify-between">
+        <div
+          ref={scrollTextRef2}
+          className="scroll-text grid gap-x-10 grid-flow-col items-center justify-between"
+        >
           {list.map((el, idx) => (
             <div key={idx} className="min-h-15 min-w-56 mr-18">
-              <img alt={`Logo ${idx}`} src={el} className='w-[200px] h-[200px]' />
+              <img
+                alt={`Logo ${idx}`}
+                src={el}
+                className="w-[200px] h-[200px]"
+              />
             </div>
           ))}
         </div>

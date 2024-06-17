@@ -1,6 +1,5 @@
-import {TranslationsLang} from "../../constants/language.constants";
+import { TranslationsLang } from '../../constants/language.constants';
 import { ReactTyped } from 'react-typed';
-
 
 const LanguagesList = () => {
   return (
@@ -16,7 +15,7 @@ const LanguagesList = () => {
         />
       </span>
     </div>
-  )
-}
+  );
+};
 
 export default LanguagesList;

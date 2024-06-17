@@ -1,14 +1,12 @@
+import { useState, useRef, useEffect } from 'react';
 
-import { useState, useRef, useEffect } from "react";
-
-import { FaPlus } from "react-icons/fa6";
-import { FaMinus } from "react-icons/fa6";
-import {FAQ} from "../../constants/FaqData.constant";
+import { FaPlus, FaMinus } from 'react-icons/fa6';
+import { FAQ } from '@/constants/FaqData.constant';
 interface AccordionProps {
   faqs: FAQ[];
 }
 
-const Accordion: React.FC<AccordionProps> = ({faqs:faqs}) => {
+const Accordion: React.FC<AccordionProps> = ({ faqs }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [height, setHeight] = useState<number>(0);
   const contentRefs = useRef<Array<HTMLDivElement | null>>([]);
@@ -41,15 +39,15 @@ const Accordion: React.FC<AccordionProps> = ({faqs:faqs}) => {
             <div
               className={`rounded-lg ${
                 openIndex === index
-                  ? "border border-indigo-500 bg-black"
-                  : "null"
+                  ? 'border border-indigo-500 bg-black'
+                  : 'null'
               }`}
             >
               <button
                 className={`w-full text-left p-4 ${
                   openIndex === index
-                    ? "bg-black text-white rounded-t-lg"
-                    : "bg-gray-100 text-black rounded-lg border border-gray-200"
+                    ? 'bg-black text-white rounded-t-lg'
+                    : 'bg-gray-100 text-black rounded-lg border border-gray-200'
                 }`}
                 onClick={() => handleToggle(index)}
               >
@@ -61,10 +59,10 @@ const Accordion: React.FC<AccordionProps> = ({faqs:faqs}) => {
                 </span>
               </button>
               <div
-                ref={(el) => (contentRefs.current[index] = el)}
+                ref={el => (contentRefs.current[index] = el)}
                 style={{
-                  height: openIndex === index ? `${height}px` : "0px",
-                  transition: "height 0.5s ease-in-out",
+                  height: openIndex === index ? `${height}px` : '0px',
+                  transition: 'height 0.5s ease-in-out',
                 }}
                 className="overflow-hidden"
               >

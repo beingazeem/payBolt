@@ -6,13 +6,12 @@ import { RoutePath } from '@/routes';
 export const Header = () => {
   const [isSubProductVisible, setIsSubProductVisible] = useState(false);
 
-
   return (
     <header className="border-b border-b-foreground/10 fixed top-0 w-full z-50 bg-background">
       <nav className="w-11/12 md:w-[65%] mx-auto flex justify-between items-center">
         <div className="flex items-center gap-10 h-20">
           <Link to={RoutePath.HOME}>
-            <h1 className="text-3xl font-bold h-full">LOGO</h1>
+            <h1 className="text-3xl font-black h-full uppercase">PayBolt</h1>
           </Link>
           <ul className="flex items-center gap-5 h-full">
             {/* <NavLink
@@ -77,7 +76,7 @@ export const Header = () => {
         <ul className="flex items-center gap-5">
           <NavLink
             to={RoutePath.LOGIN}
-            className={'py-1 px-5  transition-colors  font-bold '}
+            className={'py-1 px-5 transition-colors font-bold rounded-full'}
           >
             Login
           </NavLink>

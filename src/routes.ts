@@ -19,4 +19,5 @@ export const RoutePath = {
   PRICING: '/pricing',
   LOGIN: '/login',
   SIGN_UP: '/signup',
+  CONTACT: '/contact',
 };
