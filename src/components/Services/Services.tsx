@@ -1,5 +1,4 @@
-import ServicesConstants from '../../constants/Services.constants';
-import React from 'react';
+import ServicesConstants from '@/constants/Services.constants';
 
 const Services = () => {
   return (
