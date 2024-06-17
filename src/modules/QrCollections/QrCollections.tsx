@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 export const QrCollections = () => {
   return (
     <>
-      <Hero {...QrCollectionsConstant} />
+      <Hero {...QrCollectionsConstant} className="lg:mt-10" />
       <section className="w-11/12 md:w-[65%] mx-auto mb-20">
         <div className="text-3xl text-center mb-10 uppercase flex justify-center ">
           <h4 className="w-fit px-16 py-5 bg-foreground/10 -skew-x-6 border-r-primary border-r">

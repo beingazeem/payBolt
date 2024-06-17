@@ -1,1 +1,1 @@
-export {Payout} from './Payout';
+export { Payout } from './Payout';
