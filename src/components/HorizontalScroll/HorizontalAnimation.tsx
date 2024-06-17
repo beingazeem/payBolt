@@ -2,10 +2,10 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
 const list = [
-  '/assets/images/YesBank.png',
   '/assets/images/Fino_Bank.png',
   '/assets/images/Axis_Bank.png',
   '/assets/images/Rbl_Bank.png',
+  '/assets/images/YesBank.jpeg'
 ];
 
 const ScrollingLogos = () => {
@@ -71,8 +71,8 @@ const ScrollingLogos = () => {
   }, []);
 
   return (
-    <div className="container">
-      <div className="grid gap-x-10 grid-flow-col  overflow-hidden sm:py-20 ">
+    <div className="cardTheme">
+      <div className="grid gap-x-10 grid-flow-col overflow-hidden mb-10 py-10 ">
         <div
           ref={scrollTextRef1}
           className="scroll-text grid gap-x-10 grid-flow-col items-center justify-between"
@@ -82,7 +82,7 @@ const ScrollingLogos = () => {
               <img
                 alt={`Logo ${idx}`}
                 src={el}
-                className="w-[200px] h-[200px]"
+                className="w-[200px] h-[120px] object-cover"
               />
             </div>
           ))}
@@ -96,7 +96,7 @@ const ScrollingLogos = () => {
               <img
                 alt={`Logo ${idx}`}
                 src={el}
-                className="w-[200px] h-[200px]"
+                className="w-[200px] h-[120px] object-cover"
               />
             </div>
           ))}
