@@ -8,8 +8,14 @@ export interface Props {
   };
   desc: string;
   buttons: {
-    first: string;
-    second?: string;
+    first: {
+      text: string;
+      href: string;
+    };
+    second?: {
+      text: string;
+      href: string;
+    };
   };
   imgSrc: string;
   className?: string;
@@ -17,9 +23,7 @@ export interface Props {
 
 export const Hero = ({ buttons, desc, imgSrc, title, className }: Props) => {
   const nav = useNavigate();
-  const Navigate = () => {
-    nav('/login');
-  };
+
   return (
     <section
       id="hero"
@@ -37,13 +41,16 @@ export const Hero = ({ buttons, desc, imgSrc, title, className }: Props) => {
         <div className="flex gap-x-5 items-center flex-wrap">
           <button
             className="py-2 px-8 mt-5 rounded-full border-foreground/30 transition-colors border font-bold hover:bg-foreground hover:text-background"
-            onClick={() => Navigate()}
+            onClick={() => nav(buttons.first.href)}
           >
-            {buttons.first}
+            {buttons.first.text}
           </button>
           {buttons.second ? (
-            <button className="py-2 px-8 mt-5 rounded-full border-foreground/30 transition-colors border font-bold bg-foreground text-background">
-              {buttons.second}
+            <button
+              onClick={() => buttons.second && nav(buttons.second.href)}
+              className="py-2 px-8 mt-5 rounded-full border-foreground/30 transition-colors border font-bold bg-foreground text-background"
+            >
+              {buttons.second.text}
             </button>
           ) : null}
         </div>

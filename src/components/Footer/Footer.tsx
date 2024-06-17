@@ -1,5 +1,7 @@
+import { RoutePath } from '@/routes';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaSquareXTwitter } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -28,65 +30,68 @@ export const Footer = () => {
               Tamil Nadu, India - 600083
             </address>
             <div className="flex space-x-4">
-              <a
-                href="https://www.facebook.com"
+              <Link
+                to="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-700"
               >
                 <FaFacebook className="w-6 h-6" />
-              </a>
-              <a
-                href="https://www.instagram.com"
+              </Link>
+              <Link
+                to="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-700"
               >
                 <FaInstagram className="w-6 h-6" />
-              </a>
-              <a
-                href="https://www.twitter.com"
+              </Link>
+              <Link
+                to="https://www.twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-700"
               >
                 <FaSquareXTwitter className="w-6 h-6" />
-              </a>
-              <a
-                href="https://www.linkedin.com"
+              </Link>
+              <Link
+                to="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-700"
               >
                 <FaLinkedin className="w-6 h-6" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
 
         {/* Middle Column */}
         <div className="flex flex-col items-center">
-          <a href="/" className="mb-2 hover:text-gray-700">
+          <Link to={RoutePath.HOME} className="mb-2 hover:text-gray-700">
             Home
-          </a>
-          <a href="/products" className="mb-2 hover:text-gray-700">
+          </Link>
+          <Link
+            to={RoutePath.SUB_PRODUCTS[0].path}
+            className="mb-2 hover:text-gray-700"
+          >
             Products
-          </a>
-          <a href="/pricing" className="mb-2 hover:text-gray-700">
+          </Link>
+          <Link to={RoutePath.PRICING} className="mb-2 hover:text-gray-700">
             Pricing
-          </a>
-          <a href="/contact" className="mb-2 hover:text-gray-700">
+          </Link>
+          <Link to={RoutePath.CONTACT} className="mb-2 hover:text-gray-700">
             Contact Us
-          </a>
+          </Link>
         </div>
 
         <div className="flex flex-col ">
-          <a href="/terms-of-service" className="mb-2 hover:text-gray-700">
+          <Link to="/terms-of-service" className="mb-2 hover:text-gray-700">
             Terms of Service
-          </a>
-          <a href="/privacy-policy" className="mb-2 hover:text-gray-700">
+          </Link>
+          <Link to="/privacy-policy" className="mb-2 hover:text-gray-700">
             Privacy Policy
-          </a>
+          </Link>
         </div>
       </div>
 

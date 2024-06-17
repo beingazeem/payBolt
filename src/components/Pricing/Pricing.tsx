@@ -1,6 +1,6 @@
 const Pricing = () => {
   return (
-    <main className="max-w-6xl mx-auto pb-36 px-8">
+    <main className="max-w-6xl mx-auto pb-36 px-8 mt-32">
       <div className="max-w-md mx-auto mb-14 text-center">
         <h1 className="text-4xl font-semibold mb-6 lg:text-5xl">
           <span className="text-indigo-600">Flexible</span> Pricing{' '}

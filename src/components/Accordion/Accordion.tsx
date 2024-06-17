@@ -1,13 +1,12 @@
 import { useState, useRef, useEffect } from 'react';
 
-import { FaPlus } from 'react-icons/fa6';
-import { FaMinus } from 'react-icons/fa6';
-import { FAQ } from '../../constants/FaqData.constant';
+import { FaPlus, FaMinus } from 'react-icons/fa6';
+import { FAQ } from '@/constants/FaqData.constant';
 interface AccordionProps {
   faqs: FAQ[];
 }
 
-const Accordion: React.FC<AccordionProps> = ({ faqs: faqs }) => {
+const Accordion: React.FC<AccordionProps> = ({ faqs }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [height, setHeight] = useState<number>(0);
   const contentRefs = useRef<Array<HTMLDivElement | null>>([]);

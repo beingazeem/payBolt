@@ -5,8 +5,8 @@ export const QrCollectionsConstant = {
   desc: 'Enable quick and easy payments with our UPI QR solutions, designed to speed up transactions and improve customer experience.',
   imgSrc: '/assets/images/QrCollections.png',
   buttons: {
-    first: 'Sign Up',
-    second: 'Contact Sales',
+    first: { text: 'Sign Up', href: '/signup' },
+    second: { text: 'Contact Sales', href: '/products/qr-collections' },
   },
 };
 

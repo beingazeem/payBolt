@@ -11,6 +11,7 @@ import { Banking } from './modules/Banking';
 import { SignUp } from './modules/SignUp';
 import { Login } from './modules/Login';
 import { HAS_NO_FOOTER } from './constants/common.constant';
+import { NotFound } from './modules/NotFound';
 
 function App() {
   const location = useLocation();
@@ -28,7 +29,7 @@ function App() {
           <Route path="/products/qr-collections" element={<QrCollections />} />
           <Route path="/products/payout" element={<Payout />} />
           <Route path="/products/banking" element={<Banking />} />
-          <Route path="*" element={<div>404</div>} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
       {!HAS_NO_FOOTER.includes(location.pathname) && (
