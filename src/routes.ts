@@ -15,6 +15,18 @@ export const RoutePath = {
       path: '/products/banking',
       name: 'Banking',
     },
+    {
+      path: '/products/qr-collections',
+      name: 'QR Collections',
+    },
+    {
+      path: '/products/payout',
+      name: 'Payout',
+    },
+    {
+      path: '/products/banking',
+      name: 'Banking',
+    },
   ],
   PRICING: '/pricing',
   LOGIN: '/login',

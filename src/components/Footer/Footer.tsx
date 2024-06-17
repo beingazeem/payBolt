@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
-    <footer>
-      <div className="container mx-auto flex flex-col md:flex-row justify-around items-center space-y-6 md:space-y-0">
+    <footer className='footer'>
+      <div className="flex  flex-col md:flex-row items-center justify-between md:space-y-0 mx-4 cardTheme rounded-lg px-10 py-10">
         <div className="flex flex-col">
           <div className="flex mb-4 gap-x-4">
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-2">

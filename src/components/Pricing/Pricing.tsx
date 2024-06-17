@@ -61,7 +61,7 @@ const Pricing = () => {
             href="#/"
             className="flex justify-center items-center bg-primary rounded-xl py-5 px-4 text-center text-white text-xl"
           >
-            Get Started
+            Choose Plan
             <img
               src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
               className="ml-2"
@@ -117,7 +117,7 @@ const Pricing = () => {
             href="#/"
             className="flex justify-center items-center bg-primary rounded-xl py-6 px-4 text-center text-white text-2xl"
           >
-            Get Started
+            Choose Plan
             <img
               src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
               className="ml-2"
