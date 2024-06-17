@@ -10,6 +10,7 @@ import { Payout } from './modules/Payout';
 import { Banking } from './modules/Banking';
 import { SignUp } from './modules/SignUp';
 import { Login } from './modules/Login';
+import { HAS_NO_FOOTER } from './constants/common.constant';
 
 function App() {
   const location = useLocation();
@@ -30,7 +31,7 @@ function App() {
           <Route path="*" element={<div>404</div>} />
         </Route>
       </Routes>
-      {location.pathname !== '/login' && (
+      {!HAS_NO_FOOTER.includes(location.pathname) && (
         <>
           <Accordion faqs={FAQS} />
           <Footer />
