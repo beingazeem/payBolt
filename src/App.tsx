@@ -12,8 +12,11 @@ import { SignUp } from './modules/SignUp';
 import { Login } from './modules/Login';
 import { HAS_NO_FOOTER } from './constants/common.constant';
 import { NotFound } from './modules/NotFound';
-import { motion, useScroll, useSpring } from "framer-motion";
-
+import { motion, useScroll, useSpring } from 'framer-motion';
+import { DynamicQrCollections } from './modules/DynamicQrCollections';
+import { MoneyTransfer } from './modules/MoneyTransfer';
+import { PosService } from './modules/PosService';
+import TermAndCondition from './modules/TnC/TermAndCondition';
 
 function App() {
   const location = useLocation();
@@ -21,11 +24,11 @@ function App() {
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
-    restDelta: 0.001
+    restDelta: 0.001,
   });
   return (
     <>
-    <motion.div
+      <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
@@ -39,8 +42,15 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           {/* <Route path="/products" element={<div>Products</div>} /> */}
           <Route path="/products/qr-collections" element={<QrCollections />} />
-          <Route path="/products/payout" element={<Payout />} />
-          <Route path="/products/banking" element={<Banking />} />
+          <Route path="/products/payout-services" element={<Payout />} />
+          <Route path="/products/instant-banking" element={<Banking />} />
+          <Route
+            path="/products/dynamic-collections"
+            element={<DynamicQrCollections />}
+          />
+          <Route path="/products/money-transfer" element={<MoneyTransfer />} />
+          <Route path="/products/pos-services" element={<PosService />} />
+          <Route path="/terms-of-service" element={<TermAndCondition />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

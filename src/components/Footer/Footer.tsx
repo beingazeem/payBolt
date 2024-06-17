@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
-    <footer className='footer'>
-      <div className="flex  flex-col md:flex-row items-center justify-between md:space-y-0 mx-4 cardTheme rounded-lg px-10 py-10">
+    <footer className="footer">
+      <div className="flex flex-col md:flex-row items-center justify-between md:space-y-0 mx-4 cardTheme rounded-lg px-10 py-10">
         <div className="flex flex-col">
-          <div className="flex mb-4 gap-x-4">
+          <div className="flex mb-6 gap-x-4">
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-2">
               <img
                 src="/assets/images/CompanyLogo.png"
@@ -16,20 +16,14 @@ export const Footer = () => {
                 className="w-6 h-6"
               />
             </div>
-
-            <div className="text-2xl font-semibold flex items-end">PayBolt</div>
+            <div className="text-2xl font-semibold">PayBolt</div>
           </div>
           <div className="flex flex-col items-center">
-            <address className="text-center not-italic mb-4">
-              PayBolt Technologies Private Limited
-              <br />
-              Corporation Gymnastics Training Centre,
-              <br />
-              No.3, 89th Street, Ashok Nagar, Chennai,
-              <br />
-              Tamil Nadu, India - 600083
+            <address className="not-italic mb-6">
+              PayBolt Technologies Private Limited <br /> 504, 1st floor, Sector
+              3, HSR Layout, <br /> Bengaluru, Karnataka 560102.
             </address>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 -ml-36">
               <Link
                 to="https://www.facebook.com"
                 target="_blank"
@@ -65,9 +59,8 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-
         {/* Middle Column */}
-        <div className="flex flex-col items-center">
+        <div className="grid grid-cols-2 gap-x-28 gap-y-3">
           <Link to={RoutePath.HOME} className="mb-2 hover:text-gray-700">
             Home
           </Link>
@@ -83,9 +76,6 @@ export const Footer = () => {
           <Link to={RoutePath.CONTACT} className="mb-2 hover:text-gray-700">
             Contact Us
           </Link>
-        </div>
-
-        <div className="flex flex-col ">
           <Link to="/terms-of-service" className="mb-2 hover:text-gray-700">
             Terms of Service
           </Link>
@@ -93,11 +83,12 @@ export const Footer = () => {
             Privacy Policy
           </Link>
         </div>
+        {/* <div className="flex flex-col "></div> */}
       </div>
-
-      <div className="text-center mt-6">Copyright 2024 Company Name</div>
+      <div className="text-center mt-6">
+        @ Copyright 2024 PayBolt Technologies Private Limited
+      </div>
     </footer>
   );
 };
-
 export default Footer;

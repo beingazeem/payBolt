@@ -3,7 +3,8 @@ const Pricing = () => {
     <main className="max-w-6xl mx-auto pb-36 px-8 mt-32 w-full">
       <div className="max-w-md mx-auto mb-14">
         <h1 className="text-4xl font-semibold mb-6 lg:text-5xl">
-          <span className="text-indigo-600">Flexible</span> Pricing Plans For Businesses Of All Sizes
+          <span className="text-indigo-600">Flexible</span> Pricing Plans For
+          Businesses Of All Sizes
         </h1>
         <p className="text-xl text-gray-500 font-medium">
           Choose a plan that scales with your business.
