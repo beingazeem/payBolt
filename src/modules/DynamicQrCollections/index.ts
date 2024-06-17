@@ -1,0 +1,1 @@
+export { DynamicQrCollections } from './DynamicQrCollections';

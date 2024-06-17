@@ -1,15 +1,15 @@
 import { Hero } from '@/components/Hero';
 import {
-  benefits,
-  features,
-  QrCollectionsConstant,
-} from '@/constants/qrcollections.constant';
+  MoneyTransferConstant,
+  moneyTransferBenefits,
+  moneyTransferFeatures,
+} from '@/constants/common.constant';
 import { Link } from 'react-router-dom';
 
-export const QrCollections = () => {
+export const MoneyTransfer = () => {
   return (
     <>
-      <Hero {...QrCollectionsConstant} className="lg:mt-10" />
+      <Hero {...MoneyTransferConstant} className="lg:mt-10" />
       <section className="cardTheme">
         <div className="w-11/12 md:w-[65%] mx-auto py-20">
           <div className="text-3xl text-center mb-10 uppercase flex justify-center ">
@@ -19,7 +19,7 @@ export const QrCollections = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-10 place-items-center mb-20">
-            {features.map(feature => (
+            {moneyTransferFeatures.map(feature => (
               <div
                 key={feature.heading}
                 className="w-full flex flex-col justify-between mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl h-[320px] sm:w-96 lg:w-full lg:order-1"
@@ -54,7 +54,7 @@ export const QrCollections = () => {
             </h4>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-10 place-items-center">
-            {benefits.map((benefit, idx) => (
+            {moneyTransferBenefits.map((benefit, idx) => (
               <div
                 key={benefit.desc}
                 className="w-full flex flex-col justify-between mt-8 p-8 order-2 shadow-xl rounded-3xl h-[320px] sm:w-96 lg:w-full lg:order-1"
