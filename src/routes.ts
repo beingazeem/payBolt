@@ -1,6 +1,6 @@
 export const RoutePath = {
   HOME: '/',
-  // ABOUT: '/about',
+  ABOUT: '/about',
   PRODUCTS: '/products',
   SUB_PRODUCTS: [
     {
@@ -8,24 +8,24 @@ export const RoutePath = {
       name: 'QR Collections',
     },
     {
-      path: '/products/payout',
-      name: 'Payout',
+      path: '/products/dynamic-collections',
+      name: 'Dynamic QR Collections',
     },
     {
-      path: '/products/banking',
-      name: 'Banking',
+      path: '/products/money-transfer',
+      name: 'Money Transfer',
     },
     {
-      path: '/products/qr-collections',
-      name: 'QR Collections',
+      path: '/products/payout-services',
+      name: 'Payout Services',
     },
     {
-      path: '/products/payout',
-      name: 'Payout',
+      path: '/products/pos-services',
+      name: 'Pos Services',
     },
     {
-      path: '/products/banking',
-      name: 'Banking',
+      path: '/products/instant-banking',
+      name: 'Instant Banking',
     },
   ],
   PRICING: '/pricing',

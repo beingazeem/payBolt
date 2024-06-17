@@ -6,7 +6,6 @@ export const QrCollectionsConstant = {
   imgSrc: '/assets/images/QrCollections.png',
   buttons: {
     first: { text: 'Sign Up', href: '/signup' },
-    second: { text: 'Contact Sales', href: '/products/qr-collections' },
   },
 };
 
