@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FaAngleDown } from 'react-icons/fa6';
 import { RoutePath } from '@/routes';
+import { IoFingerPrint } from 'react-icons/io5';
 
 export const Header = () => {
   const [isSubProductVisible, setIsSubProductVisible] = useState(false);
@@ -79,8 +80,12 @@ export const Header = () => {
           to={RoutePath.LOGIN}
           className={'py-1 px-5 transition-colors font-bold rounded-full'}
         >
-          Login
+          <div className="flex gap-x-2 items-center justify-center">
+            <IoFingerPrint />
+            Login
+          </div>
         </NavLink>
+
         <NavLink
           to={RoutePath.SIGN_UP}
           className={({ isActive }) => {

@@ -51,8 +51,8 @@ function App() {
           />
           <Route path="/products/money-transfer" element={<MoneyTransfer />} />
           <Route path="/products/pos-services" element={<PosService />} />
-          <Route path="/terms-of-service" element={<TermAndCondition />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/t&c" element={<TermAndCondition />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
         </Route>

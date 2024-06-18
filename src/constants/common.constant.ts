@@ -1,4 +1,4 @@
-export const HAS_NO_FOOTER = ['/login', '/signup'];
+export const HAS_NO_FOOTER = ['/login', '/signup', '/contact'];
 
 export const DynamicQrCollectionsConstant = {
   title: {
@@ -37,14 +37,17 @@ export const dynamicFeatures = [
 
 export const dynamicBenefits = [
   {
+    heading: 'Transaction security',
     desc: 'Improve transaction security with unique QR codes.',
     href: '/products/dynamic-qr-collections',
   },
   {
+    heading: 'Trust and satisfaction',
     desc: 'Enhance customer trust and satisfaction.',
     href: '/products/dynamic-qr-collections',
   },
   {
+    heading: 'Reconciliation process',
     desc: 'Streamline the payment reconciliation process.',
     href: '/products/dynamic-qr-collections',
   },
@@ -87,15 +90,23 @@ export const moneyTransferFeatures = [
 
 export const moneyTransferBenefits = [
   {
+    heading: 'Instant transfers.',
     desc: 'Speed up your business operations with instant transfers.',
     href: '/products/money-transfer',
   },
   {
+    heading: 'Low Fees',
     desc: 'Save on transaction costs with our low fees.',
     href: '/products/money-transfer',
   },
   {
-    desc: 'Benefit from high security and encryption standards.',
+    heading: 'Flexibility',
+    desc: 'Increase flexibility with multi-platform support, allowing you to manage transactions from any device.',
+    href: '/products/money-transfer',
+  },
+  {
+    heading: 'Increase flexibility',
+    desc: 'Increase flexibility with multi-platform support, allowing you to manage transactions from any devices.',
     href: '/products/money-transfer',
   },
 ];
@@ -137,15 +148,23 @@ export const payoutFeatures = [
 
 export const payoutBenefits = [
   {
+    heading: 'Bulk payouts.',
     desc: 'Increase efficiency with bulk payouts.',
     href: '/products/payout-services',
   },
   {
+    heading: 'Scheduled transactions',
     desc: 'Ensure timely payments with scheduled transactions.',
     href: '/products/payout-services',
   },
   {
+    heading: 'Payout Reports',
     desc: 'Gain insights with detailed payout reports.',
+    href: '/products/payout-services',
+  },
+  {
+    heading: 'Flexibility',
+    desc: 'Increase flexibility with multi-platform support, allowing you to manage transactions from any device.',
     href: '/products/payout-services',
   },
 ];
@@ -187,14 +206,17 @@ export const posFeatures = [
 
 export const posBenefits = [
   {
+    heading: 'Payment processing',
     desc: 'Enhance customer experience with fast payment processing.',
     href: '/products/pos-services',
   },
   {
+    heading: 'Security',
     desc: 'Improve security for all transactions.',
     href: '/products/pos-services',
   },
   {
+    heading: 'Multiple payment',
     desc: 'Offer multiple payment options to customers.',
     href: '/products/pos-services',
   },
@@ -237,14 +259,17 @@ export const instantBankAccountOpeningFeatures = [
 
 export const instantBankAccountOpeningBenefits = [
   {
+    heading: 'Account approval',
     desc: 'Save time with instant account approval.',
     href: '/products/instant-bank-account-opening',
   },
   {
+    heading: 'Minimal documentation',
     desc: 'Reduce hassle with minimal documentation.',
     href: '/products/instant-bank-account-opening',
   },
   {
+    heading: 'Confidentiality',
     desc: 'Ensure security and confidentiality in the process.',
     href: '/products/instant-bank-account-opening',
   },

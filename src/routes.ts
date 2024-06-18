@@ -9,7 +9,7 @@ export const RoutePath = {
     },
     {
       path: '/products/dynamic-collections',
-      name: 'Dynamic QR Collections',
+      name: 'Dynamic QR',
     },
     {
       path: '/products/money-transfer',
@@ -21,7 +21,7 @@ export const RoutePath = {
     },
     {
       path: '/products/pos-services',
-      name: 'Pos Services',
+      name: 'POS Services',
     },
     {
       path: '/products/instant-banking',
