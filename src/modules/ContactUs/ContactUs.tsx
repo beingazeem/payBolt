@@ -12,7 +12,7 @@ import { Form } from '@shared/ui/form';
 import { Textarea } from '@shared/ui/textarea';
 
 export const ContactUs = () => {
-  const { control, handleSubmit, errors, form, setValue } = useHandleForm({
+  const { control, handleSubmit, errors, form } = useHandleForm({
     initialValues: ContactFormInitialValues,
     schema: ContactFormSchema,
   });

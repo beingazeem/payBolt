@@ -54,7 +54,7 @@ export const Banking = () => {
             </h4>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-10 place-items-center">
-            {instantBankAccountOpeningBenefits.map((benefit, idx) => (
+            {instantBankAccountOpeningBenefits.map(benefit => (
               <div
                 key={benefit.desc}
                 className="w-full flex flex-col  mt-8 p-8 order-2 shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1"
