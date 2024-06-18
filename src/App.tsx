@@ -12,7 +12,7 @@ import { SignUp } from './modules/SignUp';
 import { Login } from './modules/Login';
 import { HAS_NO_FOOTER } from './constants/common.constant';
 import { NotFound } from './modules/NotFound';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { motion, useScroll } from 'framer-motion';
 import { DynamicQrCollections } from './modules/DynamicQrCollections';
 import { MoneyTransfer } from './modules/MoneyTransfer';
 import { PosService } from './modules/PosService';
