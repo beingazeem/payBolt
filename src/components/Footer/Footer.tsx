@@ -23,7 +23,7 @@ export const Footer = () => {
               PayBolt Technologies Private Limited <br /> 504, 1st floor, Sector
               3, HSR Layout, <br /> Bengaluru, Karnataka 560102.
             </address>
-            <div className="flex space-x-4 -ml-36">
+            <div className="flex space-x-4 -ml-32">
               <Link
                 to="https://www.facebook.com"
                 target="_blank"
@@ -76,16 +76,15 @@ export const Footer = () => {
           <Link to={RoutePath.CONTACT} className="mb-2 hover:text-gray-700">
             Contact Us
           </Link>
-          <Link to="/terms-of-service" className="mb-2 hover:text-gray-700">
+          <Link to="/t&c" className="mb-2 hover:text-gray-700">
             Terms of Service
           </Link>
-          <Link to="/privacy-policy" className="mb-2 hover:text-gray-700">
+          <Link to="/privacy" className="mb-2 hover:text-gray-700">
             Privacy Policy
           </Link>
         </div>
-        {/* <div className="flex flex-col "></div> */}
       </div>
-      <div className="text-center mt-6">
+      <div className="text-center mt-6 mb-10">
         @ Copyright 2024 PayBolt Technologies Private Limited
       </div>
     </footer>

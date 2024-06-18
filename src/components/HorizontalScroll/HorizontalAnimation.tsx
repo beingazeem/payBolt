@@ -72,7 +72,7 @@ const ScrollingLogos = () => {
 
   return (
     <div className="bg-white">
-      <div className="grid gap-x-10 grid-flow-col overflow-hidden mb-10 py-10 ">
+      <div className="grid gap-x-10 grid-flow-col overflow-hidden mb-10 py-2 ">
         <div
           ref={scrollTextRef1}
           className="scroll-text grid gap-x-10 grid-flow-col items-center justify-between"

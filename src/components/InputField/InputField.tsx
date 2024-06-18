@@ -54,18 +54,18 @@ export const InputField = ({
               placeholder={placeholder}
               type={inputType || 'text'}
               {...field}
-              className={cn('px-2', {
+              className={cn('px-2 border-none', {
                 'outline-destructive': !!formControl.getFieldState(field.name)
                   .error,
               })}
             />
           </FormControl>
           {description && (
-            <FormDescription className="text-red">
+            <FormDescription className="flex justify-end text-red ">
               {description}
             </FormDescription>
           )}
-          <FormMessage className="text-xs text-red-600 dark:text-red-400" />
+          <FormMessage className="text-xs text-red-600 dark:text-red-400 flex justify-end" />
         </FormItem>
       )}
     />

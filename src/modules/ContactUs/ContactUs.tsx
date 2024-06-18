@@ -9,6 +9,7 @@ import {
 } from './ContactFormSchema';
 
 import { Form } from '@shared/ui/form';
+import { Textarea } from '@shared/ui/textarea';
 
 export const ContactUs = () => {
   const { control, handleSubmit, errors, form, setValue } = useHandleForm({
@@ -21,20 +22,20 @@ export const ContactUs = () => {
   };
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 justify-between items-center w-full ">
-      <div className="flex flex-col items-center justify-center p-4 h-dvh pt-20">
-        <div className="w-full lg:w-[80%] mx-auto py-10 bg-foreground/10 rounded-lg">
+    <section className="w-full  h-lvh fixed ">
+      <div className="flex   h-dvh pt-20 ">
+        <div className="py-44 cardTheme  h-lvh w-[50%]">
           <div className="space-y-2 text-center mb-8">
-            <h1 className="text-3xl font-bold">Welcome Back!</h1>
+            <h1 className="text-3xl font-bold">Contact Us!</h1>
             <p className="text-gray-500 dark:text-gray-400">
-              Please login to your account.
+              Share your Suggestions / Feedback.
             </p>
           </div>
           <div className="self-center w-[80%] mx-auto">
             <Form {...form}>
               <form
                 onSubmit={handleSubmit(onSubmit)}
-                className=" items-center space-y-4 w-[70%] mx-auto"
+                className=" items-center space-y-6  mx-auto"
               >
                 <InputField
                   name="username"
@@ -42,7 +43,7 @@ export const ContactUs = () => {
                   placeholder="Enter your name "
                   inputType="text"
                   formControl={control}
-                  error={errors.name?.message}
+                  error={errors.username?.message}
                 />
                 <InputField
                   name="email"
@@ -54,20 +55,27 @@ export const ContactUs = () => {
                 />
 
                 <InputField
-                  name="phone"
+                  name="phoneNumber"
                   label="Password"
-                  placeholder="Enter your password"
-                  inputType="password"
+                  placeholder="Enter your Phone Number"
+                  inputType="phoneNumber"
                   formControl={control}
-                  error={errors.phone?.message}
+                  error={errors.phoneNumber?.message}
                 />
-
+                <Textarea />
                 <Button variant="outline" className="w-full">
                   Submit
                 </Button>
               </form>
             </Form>
           </div>
+        </div>
+        <div className="h-dvh  hidden lg:block">
+          <img
+            src="/assets/images/Contact.jpg"
+            alt="Loading"
+            className="h-dvh inline-block object-cover"
+          />
         </div>
       </div>
     </section>

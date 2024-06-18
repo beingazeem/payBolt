@@ -27,7 +27,7 @@ export const SignUp = () => {
             <h1 className="text-3xl font-bold">Create an Account</h1>
             <p className="text-gray-500 dark:text-gray-400">Join us today!</p>
           </div>
-          <div className="self-center w-[80%] mx-auto">
+          <div className="self-center  mx-auto">
             <Form {...form}>
               <form
                 onSubmit={handleSubmit(onSubmit)}

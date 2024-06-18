@@ -2,33 +2,35 @@ import { EMAIL_REGEX, PHONE_NUMBER_REGEX } from '@shared/utils';
 import { z } from 'zod';
 
 export interface ContactForm {
-  name: string;
+  username: string;
   email: string;
-  phone: string;
+  phoneNumber: string;
 }
 
 export const ContactFormInitialValues = {
-  name: '',
+  username: '',
   email: '',
-  phone: '',
+  phoneNumber: '',
 };
 
 export const ContactFormSchema = z
   .object({
-    name: z.string().min(1, {
-      message: 'Email or phone number is required',
+    username: z.string().min(1, {
+      message: 'Name is Required',
     }),
     email: z.string().min(8, {
-      message: 'Password must be at least 8 characters',
+      message: 'Email must be in valid format',
     }),
-    phone: z.string().optional(),
+    phoneNumber: z.string().min(10, {
+      message: 'Phone number should be at least 10 digits long.',
+    }),
   })
   .refine(
     data => {
       if (
-        isNaN(Number(data.name)) &&
+        isNaN(Number(data.username)) &&
         !EMAIL_REGEX.test(data.email) &&
-        isNaN(Number(data.phone))
+        isNaN(Number(data.phoneNumber))
       )
         return false;
 
@@ -42,9 +44,9 @@ export const ContactFormSchema = z
   .refine(
     data => {
       if (
-        !isNaN(Number(data.name)) &&
+        !isNaN(Number(data.username)) &&
         !PHONE_NUMBER_REGEX.test(data.email) &&
-        !isNaN(Number(data.phone))
+        !isNaN(Number(data.phoneNumber))
       ) {
         return false;
       }

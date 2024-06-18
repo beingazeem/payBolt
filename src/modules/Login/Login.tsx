@@ -37,7 +37,7 @@ export const Login = () => {
               Please login to your account.
             </p>
           </div>
-          <div className="self-center w-[80%] mx-auto">
+          <div className="self-center mx-auto">
             <Form {...form}>
               <form
                 onSubmit={handleSubmit(onSubmit)}

@@ -3,10 +3,10 @@ import { ReactTyped } from 'react-typed';
 
 const LanguagesList = () => {
   return (
-    <section className="py-10 cardTheme">
-      <div className="px-2 py-4 font-bold flex items-center justify-center gap-x-2  border-white rounded-full">
+    <section className="py-6 cardTheme">
+      <div className="px-2 font-bold flex items-center justify-center gap-x-2 ">
         <span className="text-5xl font-bold relative text-center -translate-x-14">
-          <span>Built for </span>
+          <span>Build for </span>
           <ReactTyped
             strings={TranslationsLang}
             typeSpeed={80}
