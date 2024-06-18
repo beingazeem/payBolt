@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className="footer">
       <div className="flex flex-col md:flex-row items-center justify-between md:space-y-0 mx-4 cardTheme rounded-lg px-10 py-10">
         <div className="flex flex-col">
-          <div className="flex mb-6 gap-x-4">
+          <div className="flex mb-6 gap-x-4 justify-center md:justify-start">
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-2">
               <img
                 src="/assets/images/CompanyLogo.png"
@@ -19,11 +19,11 @@ export const Footer = () => {
             <div className="text-2xl font-semibold">PayBolt</div>
           </div>
           <div className="flex flex-col items-center">
-            <address className="not-italic mb-6">
+            <address className="not-italic mb-6 text-center md:text-start">
               PayBolt Technologies Private Limited <br /> 504, 1st floor, Sector
               3, HSR Layout, <br /> Bengaluru, Karnataka 560102.
             </address>
-            <div className="flex space-x-4 -ml-32">
+            <div className="flex space-x-4 mb-10 justify-center md:self-start">
               <Link
                 to="https://www.facebook.com"
                 target="_blank"
@@ -60,7 +60,7 @@ export const Footer = () => {
           </div>
         </div>
         {/* Middle Column */}
-        <div className="grid grid-cols-2 gap-x-28 gap-y-3">
+        <div className="grid grid-cols-2 gap-x-20 gap-y-2">
           <Link to={RoutePath.HOME} className="mb-2 hover:text-gray-700">
             Home
           </Link>

@@ -75,11 +75,11 @@ const Services = () => {
           variants={containerVariants}
         >
           {services.isImageLeft ? (
-            <div className="flex w-full justify-between items-center  flex-col lg:flex-row cardTheme h-[500px] px-40">
+            <div className="flex w-full justify-between items-center  flex-col lg:flex-row cardTheme min-h-[500px] px-40 py-10 lg:py-0">
               <motion.img
                 alt="hero"
                 src={services.img}
-                className="w-full max-w-md order-2 lg:order-1"
+                className="w-full min-w-[300px] mt-5 max-w-md order-2 lg:order-1"
                 variants={imageVariants}
               />
               <div className="flex flex-col justify-center items-start gap-5 order-2 lg:order-1">
@@ -104,7 +104,7 @@ const Services = () => {
                     transition={{ type: 'spring', stiffness: 400, damping: 17 }}
                   >
                     <button
-                      className="py-2 px-8 mt-5 rounded-full border-foreground/30 transition-colors border font-bold hover:bg-foreground hover:text-background"
+                      className="py-2 px-8 mt-5 lg:mt-0 rounded-full border-foreground/30 transition-colors border font-bold hover:bg-foreground hover:text-background"
                       onClick={() => handleNavigationToProduct(services.path)}
                     >
                       Learn More
@@ -114,7 +114,7 @@ const Services = () => {
               </div>
             </div>
           ) : (
-            <div className="flex w-full justify-between items-center gap-20 flex-col lg:flex-row cardTheme h-[500px] px-40">
+            <div className="flex w-full justify-between items-center gap-20 flex-col lg:flex-row cardTheme min-h-[500px] px-40 py-10 lg:py-0">
               <div className="flex flex-col justify-center items-start gap-5 order-2 lg:order-1">
                 <motion.h3
                   className="text-5xl font-bold w-full"
@@ -148,7 +148,7 @@ const Services = () => {
               <motion.img
                 alt="hero"
                 src={services.img}
-                className="w-full max-w-md order-1 lg:order-1"
+                className="w-full mt-5 lg:mt-0 min-w-[300px] max-w-md order-1 lg:order-1"
                 variants={imageVariants}
               />
             </div>

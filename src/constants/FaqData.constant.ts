@@ -5,7 +5,7 @@ export interface FAQ {
 
 export const FAQS: FAQ[] = [
   {
-    question: 'What is included in the Basic Plan??',
+    question: 'What is included in the Basic Plan?',
     answer:
       'The Basic Plan includes UPI QR Collections, Real-time Analytics, Email Support, and Secure Transactions.',
   },

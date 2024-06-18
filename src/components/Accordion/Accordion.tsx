@@ -28,9 +28,9 @@ const Accordion: React.FC<AccordionProps> = ({ faqs }) => {
   }, [openIndex]);
 
   return (
-    <div className="flex  justify-between mx-4 my-10 ">
+    <div className="flex justify-between flex-col lg:flex-row mx-4 my-10 ">
       <div className="font-bold text-4xl ml-8">
-        Frequently Asked Questions
+        <span>Frequently Asked Questions</span>
         <span className=" font-normal"> (FAQ)</span>
       </div>
       <div className="w-full max-w-2xl mx-auto p-4">

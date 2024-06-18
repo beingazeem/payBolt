@@ -23,7 +23,7 @@ function App() {
   const location = useLocation();
   const { scrollYProgress } = useScroll();
   return (
-    <>
+    <main className="overflow-x-hidden">
       <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
@@ -58,7 +58,7 @@ function App() {
           <Footer />
         </>
       )}
-    </>
+    </main>
   );
 }
 
