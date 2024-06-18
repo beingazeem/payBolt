@@ -9,7 +9,7 @@ const Services = () => {
     navigate(route);
   };
 
-  function Section({ children }) {
+  function Section({ children }: { children: React.ReactNode }) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
