@@ -6,6 +6,10 @@ const list = [
   '/assets/images/Axis_Bank.png',
   '/assets/images/Rbl_Bank.png',
   '/assets/images/YesBank.jpeg',
+  '/assets/images/Fino_Bank.png',
+  '/assets/images/Axis_Bank.png',
+  '/assets/images/Rbl_Bank.png',
+  '/assets/images/YesBank.jpeg',
 ];
 
 const ScrollingLogos = () => {

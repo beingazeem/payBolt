@@ -64,7 +64,7 @@ export const Hero = ({ buttons, desc, imgSrc, title, className }: Props) => {
     <motion.section
       id="hero"
       className={cn(
-        ' mt-20 flex justify-between items-center flex-col lg:flex-row lg:justify-between gap-20 min-h-[calc(100dvh-8rem)] cardTheme px-40',
+        ' mt-20 py-10 lg:py-0 flex justify-between items-center flex-col lg:flex-row lg:justify-between gap-20 min-h-[calc(100dvh-8rem)] cardTheme px-40',
         className,
       )}
       initial="hidden"
@@ -98,7 +98,7 @@ export const Hero = ({ buttons, desc, imgSrc, title, className }: Props) => {
       <motion.img
         alt={title.first}
         src={imgSrc}
-        className="w-full max-w-md rounded-md min-h-[50dvh]"
+        className="w-full min-w-[300px] max-w-md rounded-md min-h-[50dvh]"
         variants={imageVariants}
       />
     </motion.section>

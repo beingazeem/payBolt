@@ -61,11 +61,11 @@ export const InputField = ({
             />
           </FormControl>
           {description && (
-            <FormDescription className="flex justify-end text-red ">
+            <FormDescription className="flex justify-start text-red ">
               {description}
             </FormDescription>
           )}
-          <FormMessage className="text-xs text-red-600 dark:text-red-400 flex justify-end" />
+          <FormMessage className="text-xs text-red-600 dark:text-red-400 flex justify-start" />
         </FormItem>
       )}
     />
