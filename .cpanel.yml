@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYMENT_TARGET=/home/bsmmntnd/public_html
-    - /usr/local/cpanel/3rdparty/bin/composer install
+    - export DEPLOYPATH=/home/bsmmntnd/public_html/
+    - /bin/cp -R . $DEPLOYPATH
