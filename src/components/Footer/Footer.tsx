@@ -14,6 +14,7 @@ export const Footer = () => {
                 src="/assets/images/CompanyLogo.jpeg"
                 alt="Bulkpe"
                 className="w-6 h-6"
+                defaultChecked
               />
             </div>
             <div className="text-2xl font-semibold">PayBolt</div>
