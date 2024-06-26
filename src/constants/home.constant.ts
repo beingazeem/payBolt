@@ -3,10 +3,10 @@ export const HomeConstants = {
     first: 'Simplifying Payments.',
     second: 'Amplifying Success.',
   },
-  desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex numquam tenetur non asperiores magni quam harum reiciendis repudiandae, minus in explicabo. Dolorem recusandae possimus non!',
+  desc: "Experience the future of payments with PayBolt's intuitive merchant solutions.",
   buttons: {
     first: { text: 'Get Started', href: '/signup' },
     second: { text: 'Get Started', href: '' },
   },
-  imgSrc: 'https://bulkpe.in/assets/three_phone.png',
+  imgSrc: '/assets/images/LandingPage.jpg',
 };

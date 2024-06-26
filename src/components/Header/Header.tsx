@@ -5,6 +5,7 @@ import { FaAngleDown, FaBars } from 'react-icons/fa6';
 import { Link, NavLink } from 'react-router-dom';
 import { RoutePath } from '@/routes';
 import { FaTimes } from 'react-icons/fa';
+import PayBoltLogo from "/assets/images/PayBolt.png"
 
 export const Header = () => {
   const [isSubProductVisible, setIsSubProductVisible] = useState(false);
@@ -25,7 +26,15 @@ export const Header = () => {
     <header className="border-b border-b-foreground/10 fixed top-0 w-full z-50 bg-background flex justify-between items-center">
       <div className="flex items-center gap-10 h-20 ml-20">
         <Link to={RoutePath.HOME}>
-          <h1 className="text-3xl font-black h-full uppercase">PayBolt</h1>
+          <div className='flex !items-center !justify-center h-20 w-20'>
+              <img
+                src={PayBoltLogo}
+                loading="lazy"
+                // className='h-full'
+                content='cover'
+              />
+          </div>
+          {/* <h1 className="text-3xl font-black h-full uppercase">PayBolt</h1> */}
         </Link>
         <nav className="hidden lg:flex items-center gap-5 h-full">
           <ul className="flex items-center gap-5 h-full">
