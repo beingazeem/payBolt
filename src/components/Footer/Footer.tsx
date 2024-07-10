@@ -11,9 +11,10 @@ export const Footer = () => {
           <div className="flex mb-6 gap-x-4 justify-center md:justify-start">
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-2">
               <img
-                src="/assets/images/CompanyLogo.png"
+                src="/assets/images/CompanyLogo.jpeg"
                 alt="Bulkpe"
                 className="w-6 h-6"
+                defaultChecked
               />
             </div>
             <div className="text-2xl font-semibold">PayBolt</div>
