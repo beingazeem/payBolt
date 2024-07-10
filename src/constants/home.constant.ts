@@ -8,5 +8,5 @@ export const HomeConstants = {
     first: { text: 'Get Started', href: '/signup' },
     second: { text: 'Get Started', href: '' },
   },
-  imgSrc: 'https://bulkpe.in/assets/three_phone.png',
+  imgSrc: 'assets/images/mackbook-scroll.png',
 };
